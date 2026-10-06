@@ -20,7 +20,11 @@ GitHub 打不开？官网提供国内高速下载：**https://rr.raymondreal.dpd
 
 ### macOS
 
-打开 dmg，将 `RayRemote` 拖入 Applications 后启动，按 app 内指引完成授权即可。
+打开 dmg，将 `RayRemote` 拖入 Applications。
+
+**首次打开被拦截？** 这是未签名应用的正常提示。解决：双击一次（弹「无法验证」→ 点「完成」）→ 系统设置 → 隐私与安全性 → 底部「仍要打开」→ 输开机密码。只需一次。dmg 内附同样步骤的说明文件。
+
+启动后按 app 内指引完成授权即可。
 
 ### Windows
 
