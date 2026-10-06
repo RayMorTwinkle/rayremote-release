@@ -8,8 +8,9 @@ RayRemote 是窗口级远程控制平台：浏览器 viewer 零安装，被控�
 
 | 平台 | 包 | 说明 |
 |---|---|---|
-| macOS | `RayRemote-<版本>.zip` | macOS 14+，解压后按指引拖入 /Applications |
-| Windows | `RayRemote-windows-amd64.zip` | Windows 10+ x64 |
+| macOS | `RayRemote-<版本>.dmg` | macOS 14+，打开后拖入 Applications |
+| Windows | `RayRemoteSetup-<版本>.exe` | Windows 10+ x64，双击运行的安装向导（推荐） |
+| Windows | `RayRemote-windows-amd64.zip` | 免安装 zip 包（高级用户） |
 
 → **[Releases 页面](https://github.com/RayMorTwinkle/rayremote-release/releases)**
 
@@ -19,17 +20,14 @@ GitHub 打不开？官网提供国内高速下载：**https://rr.raymondreal.dpd
 
 ### macOS
 
-解压 zip，将 `RayRemote.app` 拖入「应用程序」后打开，按 app 内指引完成授权即可。
+打开 dmg，将 `RayRemote` 拖入 Applications 后启动，按 app 内指引完成授权即可。
 
 ### Windows
 
-解压 zip 后在包目录运行：
+下载 `RayRemoteSetup-*.exe` 双击运行，按向导完成安装与开机自启。
+未签名版本首次运行会弹 SmartScreen，选「仍要运行」即可。
 
-```powershell
-powershell -ExecutionPolicy Bypass -File install.ps1 -Server wss://rr.raymondreal.dpdns.org/ws -Http https://rr.raymondreal.dpdns.org -Start
-```
-
-即完成安装与开机自启。未签名版本首次运行会弹 SmartScreen，选「仍要运行」即可。
+免安装 zip 包：解压后在包目录运行 `install.ps1`（参数见脚本头部注释）。
 
 ## 绑定
 
